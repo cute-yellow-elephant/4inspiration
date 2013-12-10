@@ -1,0 +1,12 @@
+2013-11-12 12:11:25.8690|Info| Application Start
+2013-11-12 12:20:09.4949|Info| Application Start
+2013-11-12 12:20:41.3518|Info| New user was added: sara, id=1
+2013-11-12 12:20:57.6987|Info| New profile was added: ertert, user id is 1
+2013-11-12 12:20:57.7867|Info| New PictureSet was added: Uncathegorized, coverpath - 1
+2013-11-12 12:21:27.0504|Info| New picture was added: etet, 1, 12.11.2013 9:21:27)
+2013-11-12 12:21:27.1504|Info| New tag was added: te
+2013-11-12 12:21:27.2264|Info| New tag was added: tet
+2013-11-12 12:21:55.8910|Info| New picture was added: etet, 1, 12.11.2013 9:21:27)
+2013-11-12 12:21:55.9800|Info| New tag was added: yy
+2013-11-12 12:21:56.0460|Info| New tag was added: rttyr
+2013-11-12 12:21:56.0970|Info| New tag was added: cat

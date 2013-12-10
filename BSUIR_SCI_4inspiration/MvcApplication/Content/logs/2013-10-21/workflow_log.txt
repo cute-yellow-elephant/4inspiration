@@ -1,0 +1,51 @@
+2013-10-21 10:53:38.8597|Info| Application Start
+2013-10-21 10:56:12.2974|Info| New picture was added: my pic, 2)
+2013-10-21 10:56:16.2507|Info| New tag was added: jelly
+2013-10-21 10:56:16.3677|Info| New tag was added:  fish
+2013-10-21 10:56:16.4217|Info| New tag was added:  cherry
+2013-10-21 11:01:31.1057|Info| New picture was added: my pic, 2)
+2013-10-21 11:03:30.7515|Info| New picture was added: my pic, 2)
+2013-10-21 11:03:35.6168|Info| New tag was added: fish
+2013-10-21 11:05:05.7309|Info| New picture was added: my pic, 2)
+2013-10-21 11:06:46.5317|Info| New picture was added: my pic, 2)
+2013-10-21 11:12:18.6577|Info| New picture was added: my pic, 2)
+2013-10-21 11:12:23.1160|Info| New tag was added: uu99
+2013-10-21 11:18:37.8164|Info| Application Start
+2013-10-21 11:36:38.9132|Info| Application Start
+2013-10-21 11:45:08.0923|Info| Application Start
+2013-10-21 12:49:00.3835|Info| Application Start
+2013-10-21 12:49:09.4441|Info| Application Start
+2013-10-21 12:57:05.3013|Info| Application Start
+2013-10-21 12:58:17.9364|Info| Application Start
+2013-10-21 12:59:26.0343|Info| Application Start
+2013-10-21 13:01:41.2371|Info| Application Start
+2013-10-21 13:39:12.5478|Info| Application Start
+2013-10-21 13:39:55.8083|Info| New user was added: Juliett, id=1
+2013-10-21 13:40:16.5375|Info| New profile was added: Juli, user id is 1
+2013-10-21 13:40:16.6255|Info| New PictureSet was added: Uncathegorized, coverpath - 1
+2013-10-21 13:40:58.1819|Info| New PictureSet was added: Uncathegorized, coverpath - 1
+2013-10-21 13:42:04.6667|Info| New picture was added: erte, 1, 21.10.2013 10:42:04)
+2013-10-21 13:42:04.7687|Info| New tag was added: cherry
+2013-10-21 13:42:04.8997|Info| New tag was added: pure
+2013-10-21 13:42:04.9597|Info| New tag was added: love
+2013-10-21 13:55:18.8331|Info| Application Start
+2013-10-21 13:56:26.9010|Info| New picture was added: erte, 1, 21.10.2013 10:42:04)
+2013-10-21 13:56:26.9700|Info| New tag was added: worldwide
+2013-10-21 13:56:27.1370|Info| New tag was added: insurance
+2013-10-21 13:56:27.3110|Info| New tag was added: cars
+2013-10-21 13:56:27.4220|Info| New tag was added: promises
+2013-10-21 13:56:27.5210|Info| New tag was added: pies
+2013-10-21 13:56:27.6110|Info| New tag was added: kitties
+2013-10-21 13:56:27.6960|Info| New tag was added: happy
+2013-10-21 13:56:27.7610|Info| New tag was added: sad
+2013-10-21 13:56:27.8090|Info| New tag was added: sadness
+2013-10-21 14:02:33.4800|Info| Application Start
+2013-10-21 22:06:53.9481|Info| Application Start
+2013-10-21 22:08:14.0786|Info| Application Start
+2013-10-21 22:11:29.3458|Info| Application Start
+2013-10-21 22:20:31.4428|Info| Application Start
+2013-10-21 23:03:55.1157|Info| Application Start
+2013-10-21 23:04:49.5739|Info| Application Start
+2013-10-21 23:06:31.1577|Info| Application Start
+2013-10-21 23:09:10.0878|Info| Application Start
+2013-10-21 23:30:02.4884|Info| Application Start

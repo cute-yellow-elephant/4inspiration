@@ -1,0 +1,18 @@
+2013-10-23 00:07:56.3745|Info| Application Start
+2013-10-23 01:27:09.4095|Info| Application Start
+2013-10-23 01:28:03.4406|Info| New user was added: Romeo, id=2
+2013-10-23 01:28:48.3652|Info| Application Start
+2013-10-23 01:29:44.3124|Info| New profile was added: Romeo, user id is 2
+2013-10-23 01:29:44.4054|Info| New PictureSet was added: Uncathegorized, coverpath - 4
+2013-10-23 01:30:27.8949|Info| New picture was added: fhfh, 4, 22.10.2013 22:30:27)
+2013-10-23 01:30:27.9919|Info| New tag was added: ohaio
+2013-10-23 01:30:28.0459|Info| New tag was added: sunny
+2013-10-23 01:30:48.1950|Info| New picture was added: fhfh, 4, 22.10.2013 22:30:27)
+2013-10-23 01:30:48.2800|Info| New tag was added: tratata
+2013-10-23 01:43:42.3493|Info| Application Start
+2013-10-23 01:46:54.6543|Info| New picture was added: fhfh, 4, 22.10.2013 22:30:27)
+2013-10-23 01:47:16.3675|Info| New tag was added: pie
+2013-10-23 01:47:19.1307|Info| New tag was added: coca-cola
+2013-10-23 01:51:20.1555|Info| Application Start
+2013-10-23 01:56:44.6490|Info| Application Start
+2013-10-23 02:02:26.6586|Info| Application Start

@@ -1,0 +1,2 @@
+2013-10-11 00:03:32.3925|Info| Application Start
+2013-10-11 23:57:54.0545|Info| Application Start

@@ -1,0 +1,14 @@
+2013-12-09 13:11:26.7262|Info| Application Start
+2013-12-09 13:43:31.9908|Info| Application Start
+2013-12-09 14:06:59.6263|Info| Application Start
+2013-12-09 14:07:33.0342|Info| New tag was added: ooooooo
+2013-12-09 14:09:37.3073|Info| New tag was added: oooo
+2013-12-09 14:13:47.4956|Info| Application Start
+2013-12-09 14:14:26.7109|Info| New tag was added: rrrrrr
+2013-12-09 14:15:37.2319|Info| Application Start
+2013-12-09 14:16:13.7780|Info| New tag was added: oioiopiopi
+2013-12-09 14:16:22.9215|Info| New tag was added: iuj
+2013-12-09 14:23:04.0425|Info| New tag was added: hkjhjkh
+2013-12-09 14:24:53.7037|Info| New tag was added: hkjhjhg
+2013-12-09 15:48:45.6589|Info| Application Start
+2013-12-09 15:59:28.0317|Info| New tag was added: erfererer

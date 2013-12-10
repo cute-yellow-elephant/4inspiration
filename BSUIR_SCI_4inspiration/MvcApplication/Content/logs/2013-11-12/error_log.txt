@@ -1,0 +1,7 @@
+2013-11-12 12:11:28.8092|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:11:29.2212|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:11:58.8379|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:11:59.0589|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:11:59.2529|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:11:59.4609|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:21:27.2714|Error| The tag already exists in the database

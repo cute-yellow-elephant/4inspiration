@@ -1,0 +1,99 @@
+﻿@model MvcApplication.Models.WebAPIModels.TagModel
+
+@{
+    ViewBag.Title = "Manage tags";
+}
+
+@section styles{
+    @Styles.Render("~/Content/Main.css")
+}
+
+@section Brand{
+    <a class="navbar-brand" href="#"><img src="~/Content/img/4insp.png"></a>
+}
+
+@section HeaderPartLeft{
+    <li class="active"><a href="#">All images</a></li>
+}
+
+@section HeaderPart{}
+
+@section scripts {
+  <script type="text/javascript" src="@Url.Content("~/Scripts/knockout-2.1.0.js")"></script> 
+  <script type="text/javascript">
+      function TagsViewModel() {
+          var self = this;
+          self.tags = ko.observableArray();
+
+          var baseUri = '@ViewBag.ApiUrl';
+
+          self.create = function (formElement) {
+              //If valid, post the serialized form data to the web api
+              $(formElement).validate();
+              if ($(formElement).valid()) {
+                  $.post(baseUri, $(formElement).serialize(), null, "json")
+                      .done(function (o) { self.tags.push(o); })
+              }
+          }
+         
+          self.update = function (tag) {
+              $.ajax({ type: "PUT", url: baseUri + '/' + tag.ID, data: tag });
+          }
+
+          self.remove = function (tag) {
+              // First remove from the server, then from the UI
+              $.ajax({ type: "DELETE", url: baseUri + '/' + tag.ID})
+                  .done(function () { self.tags.remove(tag); });
+          }
+
+          $.getJSON(baseUri, self.tags);
+      }
+
+      $(document).ready(function () {
+          ko.applyBindings(new TagsViewModel());
+      })
+  </script>
+}
+<br />
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-6 col-md-offset-2">
+    <h2>Manage Tags</h2>
+    <div class="content">
+        <div class="float-left">
+            <table border="1" id="update-tags" data-bind="foreach: tags">
+                <tr>
+                    <td class="item"> Tag ID: <span data-bind="text: $data.ID"></span></td>
+                    <td>
+                        <div>
+                            <input type="text" data-bind="value: $data.Name"/>
+                        </div> 
+                    </td>
+                    <td><input class="btn btn-primary" type="button" value="Update" data-bind="click: $root.update"/></td>
+                    <td><input class="btn btn-primary" type="button" value="Delete Item" data-bind="click: $root.remove"/></td>               
+                </tr>
+            </table>
+        </div>
+   </div>
+</div>
+
+ <div class="col-md-3">
+        <div class="float-right">
+        <h2>Add a New Tag</h2>
+        <form id="addTag" data-bind="submit: create">
+            @Html.ValidationSummary(true)
+            <fieldset>
+                <legend>Enter 3-20 symbols in here, please</legend>
+                @Html.EditorForModel()
+                <br /><br />
+                <p><input type="submit" class="btn btn-primary" value="Try to add a new tag" /></p>
+            </fieldset>
+        </form>
+        </div>
+</div>
+
+</div>
+</div>

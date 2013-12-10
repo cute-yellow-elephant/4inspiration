@@ -1,0 +1,125 @@
+﻿@model MvcApplication.Models.HomeModels.IndexModel
+
+@{
+    var page = @Model.IndexPagingInfo.CurrentPage;
+    ViewBag.Title = "Welcome to 4inspiration!";
+    int userID = 0;
+    if (Model.CurrentUser != null) userID = Model.CurrentUser.ID;
+}
+
+@section styles{
+    @Styles.Render("~/Content/Main.css")
+}
+
+@section Brand{
+    <a class="navbar-brand" href="#"><img src="~/Content/img/4insp.png"></a>
+}
+
+@section HeaderPartLeft{
+    <li class="active"><a href="#">All images</a></li>
+    <li><a href="#">Following</a></li>
+    @if(Model.CurrentUser != null){
+    <li><a href="#">Upload</a></li>    
+    }
+}
+
+@section HeaderPart{
+    @{
+        if(Model.CurrentUser != null){
+             <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img id="userpic" src="@Url.Action("GetImage", "Account", new { id1=Model.CurrentUser.UserID, id2=0, id3=0 })">
+                    <b class="caret"></b></a>
+                  <ul class="dropdown-menu" >
+                    <li>@Html.RouteLink("My profile", "ProfilePage", new {userID = @Model.CurrentUser.UserID})</li>
+                    <li>@Html.RouteLink("My likes", "ProfilePageLikes", new {userID = @Model.CurrentUser.UserID})</li>
+                    <li>@Html.RouteLink("My sets", "ProfilePageSets", new {userID = @Model.CurrentUser.UserID})</li>
+                    <li class="divider"></li>
+                    <li><a href="/Main/0"> <button type="button" id="log_out" class="btn btn-default">Log out</button></a></li>
+                  </ul> 
+                </li>
+        }
+        else{
+            <li>@Html.RouteLink("Sign in", "SignIn")</li>
+        }
+    }
+}
+@if(Model.CurrentUser == null){
+    <!-- Carousel
+      ================================================== -->
+      <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="~/Content/img/cloud.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Are you searching for inspiration?</h1>
+                <p>If you're - you've got to the right place! Just join us by clicking "sign up" button - and get thousands
+                of inspiring pics every day / share your own motivating pictures.  </p>
+                <p><a class="btn btn-large btn-primary" href="/Registration">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="~/Content/img/blackcat.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Want to know more before signing in?</h1>
+                <p>Okay, there is a short tutorial about this site's usage. You're welcome)</p>
+                <p><a class="btn btn-large btn-primary" href="#">Go to tutorual</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div><!-- /.carousel -->
+}
+
+<div id="pic_content">
+    @if((Model.CurrentUser != null)){
+        @Html.Action("GetPictureData","Home", new { current_page = page, current_user_id = Model.CurrentUser.ID })
+    }
+    else{
+        @Html.Action("GetPictureData","Home", new { current_page = page, current_user_id = 0 }) 
+    } 
+</div>
+
+<div class="ajaxLink">
+    @if((Model.CurrentUser != null))
+    {
+        @Ajax.ActionLink("Upload more pics", "GetPictureData", "Home",
+        new { current_page = page, current_user_id = Model.CurrentUser.ID },
+            new AjaxOptions { UpdateTargetId = "pic_content",
+                              Url = Url.Action("GetPictureData", "Home", new { current_page = page, current_user_id = userID } ),
+                              InsertionMode = InsertionMode.InsertAfter})
+    }
+    else{
+        @Ajax.ActionLink("Upload more pics", "GetPictureData", "Home",
+        new { current_page = page, current_user_id = 0 },
+            new AjaxOptions { UpdateTargetId = "pic_content",
+                              Url = Url.Action("GetPictureData", "Home", new { current_page = page, current_user_id = 0 } ),
+                              InsertionMode = InsertionMode.InsertAfter})   
+    } 
+  </div> 
+
+<div class="container marketing">
+<ul class="pagination pagination-sm" id="pages_pics">
+    @{
+        if(Model.CurrentUser != null){
+            @Html.MainPageLinks(Model.IndexPagingInfo, Model.CurrentUser.UserID, (a, b) => Url.Action("Index", new { userID = a, page = b }))
+        }
+        else{
+            @Html.MainPageLinks(Model.IndexPagingInfo, 0, (a, b) => Url.Action("Index", new { userID = a, page = b }))
+        }
+    }
+      </ul>
+</div>
+
+
+<br/>
+<br/>

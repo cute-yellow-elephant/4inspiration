@@ -1,0 +1,8 @@
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\Domain\bin\Debug\Domain.dll
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\Domain\bin\Debug\Domain.pdb
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\Domain\obj\Debug\Domain.dll
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\Domain\obj\Debug\Domain.pdb
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\Domain\bin\Debug\Domain.dll.config
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache

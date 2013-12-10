@@ -1,0 +1,139 @@
+2013-10-06 12:32:42.4908|Error| The country Belarus with code 112 already exists in the database
+2013-10-06 12:32:42.6738|Error| The role Admin, code 001 already exists in the database
+2013-10-06 12:32:42.6858|Error| The role User, code 002 already exists in the database
+2013-10-06 12:32:42.9478|Error| An unexpected exception was thrown during validation of 'Password' when invoking System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid. See the inner exception for details.
+2013-10-06 12:52:19.8211|Error| The country Belarus with code 112 already exists in the database
+2013-10-06 12:52:20.0001|Error| The role Admin, code 001 already exists in the database
+2013-10-06 12:52:20.0121|Error| The role User, code 002 already exists in the database
+2013-10-06 12:52:22.2043|Error| При выполнении определения команды произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2013-10-06 13:00:04.8927|Error| The country Belarus with code 112 already exists in the database
+2013-10-06 13:00:05.0287|Error| The role Admin, code 001 already exists in the database
+2013-10-06 13:00:05.0367|Error| The role User, code 002 already exists in the database
+2013-10-06 13:01:19.0610|Error| При выполнении определения команды произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2013-10-06 13:09:29.9000|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-10-06 13:09:30.1311|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-10-06 13:09:30.3311|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-10-06 13:11:05.9225|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-10-06 13:11:06.1095|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-10-06 13:33:11.3363|Error| The country Belarus with code 112 already exists in the database
+2013-10-06 13:33:11.4734|Error| The role Admin, code 001 already exists in the database
+2013-10-06 13:33:11.4864|Error| The role User, code 002 already exists in the database
+2013-10-06 13:33:52.3347|Error| An unexpected exception was thrown during validation of 'Password' when invoking System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid. See the inner exception for details.
+2013-10-06 13:37:00.5245|Error| The country Belarus with code 112 already exists in the database
+2013-10-06 13:37:00.6795|Error| The role Admin, code 001 already exists in the database
+2013-10-06 13:37:00.6935|Error| The role User, code 002 already exists in the database
+2013-10-06 13:37:16.9534|Error| An unexpected exception was thrown during validation of 'Password' when invoking System.ComponentModel.DataAnnotations.StringLengthAttribute.IsValid. See the inner exception for details.
+2013-10-06 13:48:17.0041|Error| The country Belarus with code 112 already exists in the database
+2013-10-06 13:48:17.1182|Error| The role Admin, code 001 already exists in the database
+2013-10-06 13:48:17.1312|Error| The role User, code 002 already exists in the database
+2013-10-06 13:48:17.2342|Error| При выполнении определения команды произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2013-10-06 13:48:19.9523|Error| При выполнении определения команды произошла ошибка. Подробные сведения см. во внутреннем исключении.
+2013-10-06 13:50:43.1385|Error| The country Belarus with code 112 already exists in the database
+2013-10-06 13:50:43.2765|Error| The role Admin, code 001 already exists in the database
+2013-10-06 13:50:43.2765|Error| The role User, code 002 already exists in the database
+2013-10-06 13:53:18.4874|Error| The country Belarus with code 112 already exists in the database
+2013-10-06 13:53:18.5744|Error| The role Admin, code 001 already exists in the database
+2013-10-06 13:53:18.5784|Error| The role User, code 002 already exists in the database
+2013-10-06 13:55:19.3173|Error| The country Belarus with code 112 already exists in the database
+2013-10-06 13:55:19.4353|Error| The role Admin, code 001 already exists in the database
+2013-10-06 13:55:19.4503|Error| The role User, code 002 already exists in the database
+2013-10-06 13:55:19.4953|Error| The user mimimi already exists in the database
+2013-10-09 01:42:08.5068|Error| Указанная схема недопустима. Ошибки: 
+(37,6) : ошибка 0040: Тип varchar(50) не уточнен пространством имен или псевдонимом. Только типы PrimitiveType могут использоваться без уточнения.
+2013-10-09 01:42:08.6708|Error| Указанная схема недопустима. Ошибки: 
+(37,6) : ошибка 0040: Тип varchar(50) не уточнен пространством имен или псевдонимом. Только типы PrimitiveType могут использоваться без уточнения.
+2013-10-09 01:42:08.7868|Error| Указанная схема недопустима. Ошибки: 
+(37,6) : ошибка 0040: Тип varchar(50) не уточнен пространством имен или псевдонимом. Только типы PrimitiveType могут использоваться без уточнения.
+2013-10-09 01:42:08.9118|Error| Указанная схема недопустима. Ошибки: 
+(37,6) : ошибка 0040: Тип varchar(50) не уточнен пространством имен или псевдонимом. Только типы PrimitiveType могут использоваться без уточнения.
+2013-10-13 18:05:11.3137|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:05:49.0418|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:05:49.1919|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:05:49.3149|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:05:49.3989|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:08:34.1183|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:08:34.2143|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:08:34.3173|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:08:34.3923|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:47:42.5686|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:47:42.6586|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 18:47:42.7356|Error| Unable to determine the principal end of an association between the types 'Domain.User' and 'Domain.User'. The principal end of this association must be explicitly configured using either the relationship fluent API or data annotations.
+2013-10-13 21:26:25.3152|Error| The country Belarus with code 112 already exists in the database
+2013-10-13 21:26:25.7612|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-13 21:26:25.7842|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-13 21:26:25.8062|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-13 21:26:26.1402|Error| The role Admin, code 001 already exists in the database
+2013-10-13 21:26:26.1722|Error| The role User, code 002 already exists in the database
+2013-10-14 13:07:57.0840|Error| The country Belarus with code 112 already exists in the database
+2013-10-14 13:07:57.1200|Error| The country Spain with code 134 already exists in the database
+2013-10-14 13:07:57.2370|Error| The country Germany with code 192 already exists in the database
+2013-10-14 13:07:57.2950|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-14 13:07:57.3220|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-14 13:07:57.3330|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-14 13:07:57.5060|Error| The role Admin, code 001 already exists in the database
+2013-10-14 13:07:57.5190|Error| The role User, code 002 already exists in the database
+2013-10-14 13:12:05.6802|Error| The country Belarus with code 112 already exists in the database
+2013-10-14 13:12:05.7022|Error| The country Spain with code 134 already exists in the database
+2013-10-14 13:12:05.7182|Error| The country Germany with code 192 already exists in the database
+2013-10-14 13:12:05.7632|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-14 13:12:05.7832|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-14 13:12:05.8052|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-14 13:12:05.9412|Error| The role Admin, code 001 already exists in the database
+2013-10-14 13:12:05.9532|Error| The role User, code 002 already exists in the database
+2013-10-14 13:12:57.3672|Error| The country Belarus with code 112 already exists in the database
+2013-10-14 13:12:57.3852|Error| The country Spain with code 134 already exists in the database
+2013-10-14 13:12:57.4022|Error| The country Germany with code 192 already exists in the database
+2013-10-14 13:12:57.4212|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-14 13:12:57.4332|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-14 13:12:57.4332|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-10-14 13:12:57.5122|Error| The role Admin, code 001 already exists in the database
+2013-10-14 13:12:57.5252|Error| The role User, code 002 already exists in the database
+2013-10-14 13:14:19.6199|Error| The country Belarus with code 112 already exists in the database
+2013-10-14 13:14:19.6369|Error| The country Spain with code 134 already exists in the database
+2013-10-14 13:14:19.6489|Error| The country Germany with code 192 already exists in the database
+2013-10-14 13:21:27.9834|Error| The country Belarus with code 112 already exists in the database
+2013-10-14 13:21:28.0184|Error| The country Spain with code 134 already exists in the database
+2013-10-14 13:21:28.0464|Error| The country Germany with code 192 already exists in the database
+2013-10-14 13:21:28.7754|Error| The role Admin, code 001 already exists in the database
+2013-10-14 13:21:28.8034|Error| The role User, code 002 already exists in the database
+2013-10-17 20:32:20.5858|Error| The country Belarus with code 112 already exists in the database
+2013-10-17 20:32:20.6078|Error| The country Spain with code 134 already exists in the database
+2013-10-17 20:32:20.6258|Error| The country Germany with code 192 already exists in the database
+2013-10-17 20:32:20.6828|Error| The language Russian with code 13 already exists in the database
+2013-10-17 20:32:20.6998|Error| The language English with code 26 already exists in the database
+2013-10-17 20:32:20.7168|Error| The language Bulgarian with code 43 already exists in the database
+2013-10-17 20:32:20.8148|Error| The role Admin, id 1 already exists in the database
+2013-10-17 20:32:20.8398|Error| The role User, id 2 already exists in the database
+2013-10-19 22:38:16.7803|Error| The country Belarus with code 112 already exists in the database
+2013-10-19 22:38:16.7993|Error| The country Spain with code 134 already exists in the database
+2013-10-19 22:38:16.8123|Error| The country Germany with code 192 already exists in the database
+2013-10-19 22:38:16.8523|Error| The language Russian with code 13 already exists in the database
+2013-10-19 22:38:16.8653|Error| The language English with code 26 already exists in the database
+2013-10-19 22:38:16.9003|Error| The language Bulgarian with code 43 already exists in the database
+2013-10-19 22:38:17.0493|Error| The role Admin, id 1 already exists in the database
+2013-10-19 22:38:17.0503|Error| The role User, id 2 already exists in the database
+2013-10-19 23:06:05.4987|Error| The country Belarus with code 112 already exists in the database
+2013-10-19 23:06:05.5187|Error| The country Spain with code 134 already exists in the database
+2013-10-19 23:06:05.5337|Error| The country Germany with code 192 already exists in the database
+2013-10-19 23:06:05.5847|Error| The language Russian with code 13 already exists in the database
+2013-10-19 23:06:05.5967|Error| The language English with code 26 already exists in the database
+2013-10-19 23:06:05.6177|Error| The language Bulgarian with code 43 already exists in the database
+2013-10-19 23:06:05.7437|Error| The role Admin, id 1 already exists in the database
+2013-10-19 23:06:05.7467|Error| The role User, id 2 already exists in the database
+2013-10-21 13:38:53.7418|Error| The country Belarus with code 112 already exists in the database
+2013-10-21 13:38:53.7708|Error| The country Spain with code 134 already exists in the database
+2013-10-21 13:38:53.7948|Error| The country Germany with code 192 already exists in the database
+2013-10-21 13:38:53.8348|Error| The language Russian with code 13 already exists in the database
+2013-10-21 13:38:53.8498|Error| The language English with code 26 already exists in the database
+2013-10-21 13:38:53.8848|Error| The language Bulgarian with code 43 already exists in the database
+2013-10-21 13:38:53.9498|Error| The role Admin, id 1 already exists in the database
+2013-10-21 13:38:53.9628|Error| The role User, id 2 already exists in the database
+2013-11-12 12:13:09.6259|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:13:09.8559|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:13:10.0320|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:13:10.2310|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:13:10.4200|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:13:10.6120|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:13:10.7700|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:13:10.9570|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+2013-11-12 12:13:11.1260|Error| The model backing the 'ProjectDBContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).

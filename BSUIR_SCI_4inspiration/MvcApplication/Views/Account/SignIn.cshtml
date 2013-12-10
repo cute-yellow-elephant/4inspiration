@@ -1,0 +1,57 @@
+﻿@model MvcApplication.Models.AccountModels.UserSignInModel
+
+@{
+    ViewBag.Title = "Sign In";
+}
+
+@section styles{
+    @Styles.Render("~/Content/EnterAnyData.css")
+}
+
+@section Brand{
+    <a class="navbar-brand" href="Main/0/"><img src="~/Content/img/4insp.png"></a>
+}
+
+@section HeaderPartLeft{
+    <li>@Html.RouteLink("All images", "Index", new { userID = 0})</li>
+    <li><a href="#">Following</a></li>
+}
+
+@section HeaderPart{
+    <li class="active"><a href="#">Sign in</a></li>
+}
+
+<br/><br/>
+
+<div class="container">
+
+    <form class="form-signin" method="post"">
+        <h2 class="form-signin-heading">Welcome back ^_^ It's nice to see you. </h2>
+        <h3>Fill in the form, please. </h3>
+        <ul>
+        @if (ViewBag.NoSuchLoginOrEmail != null)
+        {
+            <li class="validation-summary-errors">@ViewBag.NoSuchLoginOrEmail</li>
+        }
+        @if (ViewBag.PasswordIsWrong != null)
+        {
+            <li class="validation-summary-errors">@ViewBag.PasswordIsWrong</li>
+        }
+        </ul>
+        <br/>
+        @Html.ValidationSummary()<br/>
+        <div class="editor-label">@Html.LabelFor(x => x.LoginEmail)</div>
+        <div class="editor-field">
+            @Html.TextBoxFor(x => x.LoginEmail)
+        </div>
+
+        <div class="editor-label">@Html.LabelFor(x => x.Password)</div>
+        <div class="editor-field">
+            @Html.EditorFor(x => x.Password)
+        </div>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Press in order to sign in</button><br/><br/>
+    </form>
+
+</div> 
+

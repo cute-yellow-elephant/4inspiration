@@ -1,0 +1,9 @@
+2013-12-09 13:12:01.2752|Error| An error occurred while getting provider information from the database. This can be caused by Entity Framework using an incorrect connection string. Check the inner exceptions for details and ensure that the connection string is correct.
+2013-12-09 13:12:31.6659|Error| An error occurred while getting provider information from the database. This can be caused by Entity Framework using an incorrect connection string. Check the inner exceptions for details and ensure that the connection string is correct.
+2013-12-09 14:03:38.7158|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-12-09 14:04:00.3010|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-12-09 14:06:09.7175|Error| Ссылка на объект не указывает на экземпляр объекта.
+2013-12-09 14:08:13.0545|Error| The tag ooooooo already exists in the database
+2013-12-09 14:09:18.5813|Error| The tag ooooooo already exists in the database
+2013-12-09 14:09:21.9914|Error| The tag ooooooo already exists in the database
+2013-12-09 14:16:16.3691|Error| The tag oioiopiopi already exists in the database

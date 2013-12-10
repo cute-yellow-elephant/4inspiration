@@ -1,0 +1,4 @@
+﻿
+<asp:Image runat="server" ImageUrl="img/4insp.png" SkinId="Logo4insp" />
+<asp:Image runat="server" ImageUrl="img/cloud.jpg" SkinId="FirstSlide" />
+<asp:Image runat="server" ImageUrl="img/blackcat.jpg" SkinId="SecondSlide" />

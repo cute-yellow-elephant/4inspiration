@@ -1,0 +1,2 @@
+2013-10-18 15:11:32.4271|Error| The PictureSet Uncathegorized already exists in the database
+2013-10-18 16:25:34.7846|Error| An error occurred while getting provider information from the database. This can be caused by Entity Framework using an incorrect connection string. Check the inner exceptions for details and ensure that the connection string is correct.

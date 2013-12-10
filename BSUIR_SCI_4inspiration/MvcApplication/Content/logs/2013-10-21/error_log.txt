@@ -1,0 +1,7 @@
+2013-10-21 11:01:37.6790|Error| The tag already exists in the database
+2013-10-21 11:03:35.6678|Error| The tag already exists in the database
+2013-10-21 11:05:29.0743|Error| The tag already exists in the database
+2013-10-21 11:06:01.9382|Error| The tag already exists in the database
+2013-10-21 11:06:55.3552|Error| The tag already exists in the database
+2013-10-21 11:07:25.4359|Error| The tag already exists in the database
+2013-10-21 13:42:04.8407|Error| The tag already exists in the database

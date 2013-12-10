@@ -1,0 +1,70 @@
+﻿@model MvcApplication.Models.AccountModels.UserRegistrationModel
+@{
+    ViewBag.Title = "Registration";
+}
+
+@section styles{
+    @Styles.Render("~/Content/EnterAnyData.css")
+}
+
+@section Brand{
+    <a class="navbar-brand" href="Main/0/"><img src="~/Content/img/4insp.png"></a>
+}
+
+@section HeaderPartLeft{
+    <li>@Html.RouteLink("All images", "Index", new { userID = 0})</li>
+    <li><a href="#">Following</a></li>
+}
+
+@section HeaderPart{
+    <li>@Html.RouteLink("Sign in", "SignIn")</li>
+}
+
+<br/><br/>
+
+<div class="container">
+
+    <form class="form-signin" method="post"">
+        <h2 class="form-signin-heading">We're glad You've decided to join 4inspiration)</h2>
+        <h3>Fill in the form, please. </h3>
+       
+        @if (ViewBag.ErrorLoginIsRegistered != null || ViewBag.ErrorEmailisIsRegistered != null)
+        {
+            <ul>
+                @if (ViewBag.ErrorLoginIsRegistered != null){
+                <li class="validation-summary-errors">@ViewBag.ErrorLoginIsRegistered</li>
+                }
+                @if(ViewBag.ErrorEmailIsRegistered != null){
+                <li class="validation-summary-errors">@ViewBag.ErrorEmailIsRegistered</li>
+                }
+            </ul>
+        }
+        <br/>
+        @Html.ValidationSummary()<br/>
+
+        <div class="editor-label">@Html.LabelFor(x => x.Login)</div>
+        <div class="editor-field">
+            @Html.TextBoxFor(x => x.Login)
+        </div>
+
+        <div class="editor-label">@Html.LabelFor(x => x.Password)</div>
+        <div class="editor-field">
+            @Html.EditorFor(x => x.Password)
+        </div>
+
+        <div class="editor-label">@Html.LabelFor(x => x.PasswordConfirm)</div>
+        <div class="editor-field">
+            @Html.EditorFor(x => x.PasswordConfirm)
+        </div>
+
+        <div class="editor-label">@Html.LabelFor(x => x.Email)</div>
+        <div class="editor-field">
+            @Html.TextBoxFor(x => x.Email)
+        </div>
+
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Press in order to register</button><br/><br/>
+    </form>
+
+</div> 
+

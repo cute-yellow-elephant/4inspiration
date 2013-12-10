@@ -1,0 +1,54 @@
+﻿@model MvcApplication.Models.AccountModels.ProfilePageModel
+
+ 
+          <div class="row">
+            <div class="col-md-4"><h4>Likes:</h4></div>
+            <div class="col-md-4 col-md-offset-1"><h4> @Model.HeartedPics.Count() </h4></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><h4>Sets:</h4></div>
+            <div class="col-md-4 col-md-offset-1"><h4> @Model.PictureSets.Count() </h4></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><h4>Followers:</h4></div>
+            <div class="col-md-4 col-md-offset-1"><h4> @Model.FollowersNumber </h4></div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-md-4"><h4>Following:</h4></div>
+          </div>
+          <div id="following">
+            @{
+               bool flag = true;
+               int following_number = Model.Following.Count();
+               int user_counter = 1;
+               while(flag)
+               {
+                   if (following_number == 0) {flag = false;}
+                   <div class="row">
+                   @for( ; user_counter <= following_number; user_counter++)
+                   {
+                       <div class="col-md-2"> <a href="#"><img src="@Url.Action("GetImage", "Account", new { Model.Following.ElementAt(user_counter-1).UserID })"></a></div>
+                       if (user_counter == following_number) { flag = false; break; } //all foolowing are on screen
+                       if (user_counter%6 == 0)//all 6 are in line
+                       {
+                           user_counter++;
+                           break; 
+                       }
+                   }
+                   </div>
+                }     
+            }            
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-4"> <h4>Tags:</h4></div>
+          </div>
+                    @foreach(var x in Model.Tags)
+                    {
+                        
+                           <label><a href="#">@x.Name</a></label>
+                        
+                    }              
+    
+    <br/><br/>

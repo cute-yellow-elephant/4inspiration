@@ -1,0 +1,143 @@
+﻿@using Domain;
+@model MvcApplication.Models.AccountModels.ProfilePageModel
+
+@{
+    var picture_set = Model.PictureSets.Where(x=>x.ID == ViewBag.PictureSetID).First();
+    ViewBag.Title = String.Format("Viewing {0}", picture_set.Name);
+    List<Picture> pictures = picture_set.Pictures
+        .OrderBy(p => p.ID)
+        .Skip((Model.PicsPagingInfo.CurrentPage - 1) * Model.PicsPagingInfo.ItemsPerPage)
+        .Take(Model.PicsPagingInfo.ItemsPerPage).ToList();
+    var pic_number = pictures.Count();
+    
+}
+
+@section styles{
+    @Styles.Render("~/Content/Main.css")
+}
+
+@section Brand{
+    <a class="navbar-brand" href="/Main/@Model.UserID/"><img src="~/Content/img/4insp.png"></a>
+}
+
+@section HeaderPartLeft{
+    <li>@Html.RouteLink("All images", "Index", new { userID = @Model.UserID})</li>
+    <li><a href="#">Following</a></li>
+    <li><a href="#">Upload</a></li>    
+}
+
+@section HeaderPart{
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img id="userpic" src="@Url.Action("GetImage", "Account", new { id1=Model.UserID, id2=0, id3=0 })">
+                    <b class="caret"></b></a>
+                  <ul class="dropdown-menu" >
+                    <li>@Html.RouteLink("My profile", "ProfilePage", new { userID = @Model.UserID})</li>
+                    <li>@Html.RouteLink("My likes", "ProfilePageLikes", new {userID = @Model.UserID})</li>
+                    <li class="active"><a href="#">My sets</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/Main/0"> <button type="button" id="log_out" class="btn btn-default">Log out</button></a></li>
+                  </ul> 
+                </li>
+}
+
+<br/><br/>
+
+<div class="row">
+      <div class="col-md-6 col-md-offset-2" id="board_big">
+          <div id="board_big_content">
+          <div class="row">
+            <div class="col-md-3"> <img id="userpic_on_board_big" src="@Url.Action("GetImage", "Account", new { id1=Model.UserID, id2=0, id3=0 })"></div>
+            <div class="col-md-6 col-md-offset-1"> <h2>@Model.UserLogin profile</h2> </div>
+          </div>
+          <hr>
+           <div class="btn-group btn-group-justified btn-group-lg">
+            @Html.RouteLink("Likes", "ProfilePageLikes", new {userID = @Model.UserID}, new { @class = "btn btn-default"})
+            <a href="#" class = "btn btn-default" id="active">Sets</a>
+            @Html.RouteLink("Options", "ProfilePage", new {userID = @Model.UserID}, new { @class = "btn btn-default"})   
+            </div>
+          <br />
+
+<div class="row">
+    <div class="col-md-7"><h4>Total number of pictures in this set:</h4></div>
+    <div class="col-md-3 "><h4><em>@picture_set.Pictures.Count()</em></h4></div>
+</div>
+<br/>
+@if(pic_number > 0)
+{
+    bool flag = true;
+    int pic_counter = 1;
+    while(flag)
+    {
+        <div class="row">
+        @for( ; pic_counter <= pic_number; pic_counter++)
+        {
+            <div class="col-md-4">
+                <div class="thumbnail">
+                     <img src="@Url.Action("GetImage", "Account", new { id1 = 0, id2 = 0, id3 = pictures.ElementAt(pic_counter-1).ID })" />  
+                    <div class="btn-group dropup" id="profile_pictures">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <strong>@pictures.ElementAt(pic_counter-1).Name</strong> <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header">@pictures.ElementAt(pic_counter-1).ShortInfo</li>
+                            <li class="dropdown-header">Was added @pictures.ElementAt(pic_counter-1).CreationDate </li>
+                            <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-remove"></span></a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Tags:</li>
+                                
+                                    @foreach(var t in pictures.ElementAt(pic_counter-1).Tags){
+                                     <a href="#">@t.Name </a>      
+                                    }
+                                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            if (pic_counter == pic_number) { flag = false; break; } //all foolowing are on screen
+            if (pic_counter%3 == 0)//all 3 are in line
+            {
+                pic_counter++;
+                break; 
+            }
+         }
+        </div><br/>
+    }     
+}
+
+
+<ul class="pagination pagination-sm" id="pages_pics">
+  @Html.ViewSetPageLinks(Model.PicsPagingInfo, Model.UserID,picture_set.ID, Model.TagsPagingInfo.CurrentPage, (a, b, c, d) => Url.Action("ProfilePageViewSet", new { userID = a, pictureSetID = b, tagsPage = c, picsPage = d }))
+</ul>
+
+
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-9"><div class="btn btn-lg btn-default btn-block">
+        @Html.RouteLink("+ Add a new picture","AddPicture", new {userID = @Model.UserID, pictureSetID = ViewBag.PictureSetID}) 
+                          </div></div>
+</div>
+ <br/>
+ <div class="row">
+    <div class="col-md-5"></div>
+    <div class="col-md-4">
+        @Html.RouteLink("Go back to sets","ProfilePageSets", new {userID = @Model.UserID}) 
+    </div>
+</div>
+   
+          </div>       
+      </div>
+   
+
+ <div class="col-md-2" id="board_small">
+
+  @Html.Partial("ProfilePageRP", Model)  
+
+    <ul class="pagination pagination-sm">
+        @Html.ViewSetPageLinks(Model.TagsPagingInfo, Model.UserID,picture_set.ID, Model.PicsPagingInfo.CurrentPage, (a, b, c, d) => Url.Action("ProfilePageViewSet", new { userID = a, pictureSetID = b, tagsPage = d, picsPage = c }))
+    </ul> 
+
+ </div>
+    </div>
+   

@@ -1,0 +1,237 @@
+﻿html{
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding-top: 50px;
+  background-image: url("img/bg_white.jpg");
+  background-repeat: repeat;
+}
+
+div .load {color: blueviolet; margin: 10px 0; font-weight: bold;}
+div .ajaxLink {margin-top: 10px; margin-right: 5px; float: left;}
+
+.page-wrapper{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+    /* Negative indent footer by its height */
+  margin: 0 auto -50px;
+  /* Pad bottom by footer height */
+  padding: 0 0 50px;
+}
+
+.page-buffer{
+  height: 15px;
+}
+
+.tag
+{
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.navbar-brand{
+	width: 200px;
+	height: 50px;
+}
+
+.navbar-brand img{
+	position: absolute;
+	top: 0;
+	left: 60px;
+	width: 200px;
+	height: 50px;
+}
+
+#userpic{
+  height: 20px;
+  width: 20px;
+}
+
+.navbar .dropdown ul{
+	background-color: #D092FA;
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+  background-color: #000000;
+  height: 50px;
+}
+
+.footer > .container {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#search
+{
+    width:210px;
+}
+
+.thumbnail {
+	background-color: ButtonShadow;
+}
+
+.thumbnail img{
+	width: 150px;
+	height: 100%;
+}
+
+    .thumbnail label
+    {
+        padding-left:1px;
+        padding-right:1px;
+        padding-top:5px;
+    }
+
+.form-control{
+ 	width: 220px;
+ 	color: #0f0;
+ }
+
+ .navbar .btn, #watch_old, .carousel-caption .btn{
+ 	background-color: #4E1073;
+ 	border-color: #65387F;
+ }
+
+ .navbar .btn:hover, .carousel-caption .btn:hover{
+ 	background-color: #AE23FF;
+ 	border-color: #D489FF;
+ }
+
+ #log_out, #log_out:hover{
+  color: #FFFFFF;
+ }
+
+#active
+{
+    color:blueviolet;
+    background-color:ButtonShadow;
+}
+
+ .row{
+  width: 100%;
+}
+
+ul{
+	text-align: center;
+	width: auto;
+}
+
+.pagination
+{
+    text-align:center;
+    width:auto;
+}
+
+#board_big{
+  background-color: #FFFAFA;
+  width: 600px;
+  height: 1050px;
+  border: 1px solid #000000;
+}
+
+#board_small{
+  background-color: #000000;
+  width: 330px;
+  height: 1050px;
+  color: #FFFAFA;
+  padding-top: 15px;
+}
+
+#following img{
+  width: 30px;
+  height: 30px;
+}
+
+#profile_links{
+  direction:ltr;
+}
+
+#board_big_content{
+  padding-top: 15px;
+  padding-left: 3px;
+}
+
+#board_big_content h2{
+  color: #4E1073;
+  padding-top: 30px;
+}
+
+#userpic_on_board_big{
+  width: 150px;
+  height: 100%;
+  border: 1px solid #000000;
+}
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  font-size: 18px;
+}
+
+.carousel-caption h1{
+  font-style: italic;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 370px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-md-3 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top:30px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+
+.marketing .col-md-3 img {
+  text-align:center;
+  width:170px;
+  height:100%;
+}
+
+.marketing .thumbnail > .btn-group > button{
+    margin-top:5px;
+	width:246px;
+  	margin-top: 5px;
+}
+
+.col-md-4 .thumbnail > #profile_pictures > button
+{
+    margin-top:5px;
+    width:149px;
+}
+
+/*end carousel*/
+
+
+
+
+
+

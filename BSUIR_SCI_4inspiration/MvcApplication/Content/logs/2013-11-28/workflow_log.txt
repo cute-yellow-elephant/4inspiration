@@ -1,0 +1,35 @@
+2013-11-28 01:25:49.2091|Info| Application Start
+2013-11-28 01:29:36.6511|Info| Application Start
+2013-11-28 01:36:21.9893|Info| Application Start
+2013-11-28 01:36:42.6335|Info| New user was added: Juliett, id=1
+2013-11-28 01:37:20.9027|Info| New profile was added: Julia, user id is 1
+2013-11-28 01:37:20.9947|Info| New PictureSet was added: Uncathegorized, coverpath - 1
+2013-11-28 01:38:19.0920|Info| New picture was added: my pic, 1, 27.11.2013 22:38:19)
+2013-11-28 01:38:19.2460|Info| New tag was added: pic
+2013-11-28 01:38:19.2990|Info| New tag was added: first
+2013-11-28 01:38:19.3440|Info| New tag was added: test
+2013-11-28 13:16:44.3725|Info| Application Start
+2013-11-28 13:19:05.8066|Info| Application Start
+2013-11-28 13:23:11.6166|Info| Application Start
+2013-11-28 13:35:26.0476|Info| Application Start
+2013-11-28 13:36:27.1141|Info| New picture was added: my pic, 1, 27.11.2013 22:38:19)
+2013-11-28 13:36:27.1911|Info| New tag was added: dgd
+2013-11-28 13:36:27.2601|Info| New tag was added: gdg
+2013-11-28 13:36:43.6601|Info| New picture was added: my pic, 1, 27.11.2013 22:38:19)
+2013-11-28 13:36:43.7961|Info| New tag was added: dfdf
+2013-11-28 13:36:43.9021|Info| New tag was added: fdfdf
+2013-11-28 13:36:58.9250|Info| New picture was added: my pic, 1, 27.11.2013 22:38:19)
+2013-11-28 13:36:59.0690|Info| New tag was added: sfs
+2013-11-28 13:37:14.0638|Info| New picture was added: my pic, 1, 27.11.2013 22:38:19)
+2013-11-28 13:37:14.1638|Info| New tag was added: fsfs
+2013-11-28 13:37:48.4418|Info| Application Start
+2013-11-28 13:44:47.7298|Info| Application Start
+2013-11-28 14:01:39.7346|Info| Application Start
+2013-11-28 14:02:12.2695|Info| Application Start
+2013-11-28 14:03:38.2034|Info| Application Start
+2013-11-28 14:14:31.0778|Info| Application Start
+2013-11-28 14:16:13.6246|Info| Application Start
+2013-11-28 14:18:47.6574|Info| Application Start
+2013-11-28 14:24:04.5146|Info| Application Start
+2013-11-28 14:27:45.8812|Info| Application Start
+2013-11-28 14:36:50.1054|Info| Application Start

@@ -1,0 +1,80 @@
+﻿@model MvcApplication.Models.AccountModels.ProfileModificationModel
+@using Domain
+@{
+    ViewBag.Title = "Profile Creation";
+}
+
+@section styles{
+    @Styles.Render("~/Content/EnterAnyData.css")
+}
+
+@section Brand{
+    <a class="navbar-brand" href="Main/0/"><img src="~/Content/img/4insp.png"></a>
+}
+
+@section HeaderPartLeft{
+    <li>@Html.RouteLink("All images", "Index", new { userID = 0})</li>
+    <li><a href="#">Following</a></li>
+}
+
+@section HeaderPart{
+    <li></li>
+}
+
+<br/>
+<div class="container">
+
+    @using (Html.BeginForm("CreateProfile","Account", new { userID = ViewBag.UserID, userLogin = ViewBag.UserLogin}, FormMethod.Post, new {@class = "form-signin", @enctype = "multipart/form-data"} ))
+    {
+
+        <h2 class="form-signin-heading">@ViewBag.UserLogin, welcome) Now You're registered in here)</h2>
+        <h3>Now it's creation of profile time! Fill in the form, all of the fields, please ^_^ </h3>
+        <br/>
+        @Html.ValidationSummary()<br/>
+        
+        <div class="editor-label">@Html.LabelFor(x => x.Name)</div>
+        @Html.TextBoxFor(x => x.Name) 
+        
+        <div class="editor-label">@Html.LabelFor(x => x.PersonalInfo)</div>
+        @Html.TextAreaFor(x => x.PersonalInfo) 
+        
+        <div class="editor-label">@Html.LabelFor(x => x.AccountsLinks)</div>
+        @Html.TextAreaFor(x => x.AccountsLinks)
+
+        ICollection<Country> country_list = null;
+        ICollection<Language> language_list = null;
+        
+        if(String.Compare(@Request.HttpMethod, "GET") == 0){
+            country_list = ViewBag.Countries;
+            language_list = ViewBag.Languages;
+        }
+        else {
+            country_list = Model.Countries;
+            language_list = Model.Languages;
+        }  
+         <br/>
+        <div class="editor-label">@Html.LabelFor(x => x.CountryID)</div>
+         
+        @Html.DropDownList("CountryID", country_list.Select(c => new SelectListItem(){Text = c.Name, Value = c.ID.ToString()}))      
+        <br/><br/> 
+        <div class="editor-label">@Html.LabelFor(x => x.LanguageID)</div>
+        @Html.DropDownList("LanguageID", language_list.Select(l => new SelectListItem(){Text = l.Name, Value = l.ID.ToString()}))
+          
+        <div><h3>Uploading your avatar: </h3></div>
+        <div class="row">
+            <div class="col-md-12 "><label>( do it every time after correcting validation errors (^_^) )</label></div>
+        </div>
+        <div><input type="file" name="image" /> </div>
+        <br />
+        
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1"><label>Do you want to get a weekly newsletter?</label></div>                   
+        </div>
+        <div class="row"> 
+            <div class="col-md-12" >@Html.CheckBoxFor(x => x.WeeklyNewsletter)</div>                
+        </div>
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Press in order to create the profile</button><br/><br/>
+    }
+
+</div> 

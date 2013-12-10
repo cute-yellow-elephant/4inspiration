@@ -1,0 +1,71 @@
+﻿@model MvcApplication.Models.PictureModels.PictureModel
+
+@{
+    ViewBag.Title = "Add a picture";
+}
+
+@section styles{
+    @Styles.Render("~/Content/EnterAnyData.css")
+}
+
+@section Brand{
+    <a class="navbar-brand" href="/Main/@ViewBag.UserID/"><img src="~/Content/img/4insp.png"></a>
+}
+
+@section HeaderPartLeft{
+    <li>@Html.RouteLink("All images", "Index", new { userID = ViewBag.UserID } )</li>
+    <li><a href="#">Following</a></li>
+    <li><a href="#">Upload</a></li>  
+    } 
+
+@section HeaderPart{
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img id="userpic" src="@Url.Action("GetImage", "Account", new { id1=ViewBag.UserID, id2=0, id3=0 })">
+                    <b class="caret"></b></a>
+                  <ul class="dropdown-menu" >
+                    <li>@Html.RouteLink("My profile", "ProfilePage", new { userID = @ViewBag.UserID})</li>
+                    <li>@Html.RouteLink("My likes", "ProfilePageLikes", new {userID = @ViewBag.UserID})</li>
+                    <li>@Html.RouteLink("My sets", "ProfilePageSets", new {userID = @ViewBag.UserID})</li>
+                    <li class="divider"></li>
+                    <li><a href="#"> <button type="button" id="log_out" class="btn btn-default">Log out</button></a></li>
+                  </ul> 
+                </li>
+}
+
+<br/>
+<div class="container">
+
+    @using (Html.BeginForm("AddPicture","Picture", new { userID = ViewBag.UserID, pictureSetID = ViewBag.PictureSetID }, FormMethod.Post, new {@class = "form-signin", @enctype = "multipart/form-data"} ))
+    {
+
+        <h2 class="form-signin-heading">To add a new picture to our site is a good idea.</h2>
+        <h3>Go for it) </h3>
+        <br/>
+        if (ViewBag.NoImage != null)
+        {
+            <ul><li class="validation-summary-errors">@ViewBag.NoImage</li></ul>
+        }
+        @Html.ValidationSummary()
+        <br/>     
+        <div class="editor-label">@Html.LabelFor(x => x.Name)</div>
+        @Html.TextBoxFor(x => x.Name) 
+        <br/>    
+        <div class="editor-label">@Html.LabelFor(x => x.ShortInfo)</div>
+        @Html.TextAreaFor(x => x.ShortInfo) 
+        <br/>  
+        <div class="editor-label">@Html.LabelFor(x => x.TagsLine)</div>
+        @Html.TextAreaFor(x => x.TagsLine) 
+        <br/>     
+        <div><h3>Uploading the image: </h3></div>
+        <div class="row">
+            <div class="col-md-12 "><label>( do it every time after correcting validation errors (^_^) )</label></div>
+        </div>
+        <div><input type="file" name="image" /> </div>
+        <br />
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Press in order to create the picture</button><br/><br/>
+    }
+
+</div> 
+
+

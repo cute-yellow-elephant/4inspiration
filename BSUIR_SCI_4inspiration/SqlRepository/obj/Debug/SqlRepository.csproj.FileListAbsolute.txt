@@ -1,0 +1,10 @@
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\bin\Debug\SqlRepository.dll
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\bin\Debug\SqlRepository.pdb
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\bin\Debug\Domain.dll
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\bin\Debug\Domain.pdb
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\obj\Debug\SqlRepository.csprojResolveAssemblyReference.cache
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\obj\Debug\SqlRepository.dll
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\obj\Debug\SqlRepository.pdb
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\bin\Debug\SqlRepository.dll.config
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\bin\Debug\EntityFramework.dll
+C:\Users\Julia\Documents\Visual Studio 2012\Projects\BSUIR_SCI_4inspiration\SqlRepository\bin\Debug\EntityFramework.xml

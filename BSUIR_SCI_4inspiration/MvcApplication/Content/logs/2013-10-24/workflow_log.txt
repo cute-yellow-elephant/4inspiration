@@ -1,0 +1,28 @@
+2013-10-24 00:49:39.6408|Info| Application Start
+2013-10-24 01:01:12.6215|Info| Application Start
+2013-10-24 01:01:56.7100|Info| Application Start
+2013-10-24 01:12:24.4539|Info| Application Start
+2013-10-24 01:36:24.0342|Info| Application Start
+2013-10-24 01:46:42.8256|Info| Application Start
+2013-10-24 10:52:05.4473|Info| Application Start
+2013-10-24 10:55:39.1295|Info| Application Start
+2013-10-24 10:57:01.0812|Info| Application Start
+2013-10-24 10:59:17.6680|Info| Application Start
+2013-10-24 12:10:55.3471|Info| Application Start
+2013-10-24 12:15:47.5108|Info| New PictureSet was added: Uncathegorized, coverpath - 4
+2013-10-24 12:17:34.4779|Info| Application Start
+2013-10-24 12:18:46.1200|Info| Application Start
+2013-10-24 12:29:04.9534|Info| New user was added: Sergey123, id=3
+2013-10-24 12:29:38.0783|Info| New profile was added: Sergey, user id is 3
+2013-10-24 12:29:38.2043|Info| New PictureSet was added: Uncathegorized, coverpath - 6
+2013-10-24 12:30:36.7497|Info| New picture was added: etr, 6, 22.10.2013 22:46:54)
+2013-10-24 12:30:37.0447|Info| New tag was added: flowers
+2013-10-24 12:30:37.2247|Info| New tag was added: tulips
+2013-10-24 12:30:37.3747|Info| New tag was added: djfh
+2013-10-24 12:30:37.5157|Info| New tag was added: fghrf
+2013-10-24 14:42:28.3212|Info| Application Start
+2013-10-24 14:44:17.5875|Info| New user was added: nastya, id=4
+2013-10-24 14:45:28.8446|Info| New profile was added: nastya, user id is 4
+2013-10-24 14:45:28.9956|Info| New PictureSet was added: Uncathegorized, coverpath - 7
+2013-10-24 14:47:20.9550|Info| New picture was added: dfter, 7, 24.10.2013 9:30:36)
+2013-10-24 14:47:21.1320|Info| New tag was added: fyu

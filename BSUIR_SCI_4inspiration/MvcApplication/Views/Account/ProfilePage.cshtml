@@ -1,0 +1,120 @@
+﻿@model MvcApplication.Models.AccountModels.ProfilePageModel
+
+@{
+    ViewBag.Title = String.Format("{0} Profile Page, Options", Model.UserLogin);
+}
+
+@section styles{
+    @Styles.Render("~/Content/Main.css")
+}
+
+@section Brand{
+    <a class="navbar-brand" href="/Main/@Model.UserID/"><img src="~/Content/img/4insp.png"></a>
+}
+
+@section HeaderPartLeft{
+    <li>@Html.RouteLink("All images", "Index", new { userID = @Model.UserID})</li>
+    <li><a href="#">Following</a></li>
+    <li><a href="#">Upload</a></li>    
+}
+
+@section HeaderPart{
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img id="userpic" src="@Url.Action("GetImage", "Account", new { id1=Model.UserID, id2=0, id3=0 })">
+                    <b class="caret"></b></a>
+                  <ul class="dropdown-menu" >
+                    <li class="active"><a href="#">My profile</a></li>
+                    <li>@Html.RouteLink("My likes", "ProfilePageLikes", new {userID = @Model.UserID})</li>
+                    <li>@Html.RouteLink("My sets", "ProfilePageSets", new {userID = @Model.UserID})</li>
+                    <li class="divider"></li>
+                    <li><a href="/Main/0"> <button type="button" id="log_out" class="btn btn-default">Log out</button></a></li>
+                  </ul> 
+                </li>
+}
+
+<br/><br/>
+
+<div class="row">
+      <div class="col-md-6 col-md-offset-2" id="board_big">
+          <div id="board_big_content" class="row">
+              @{
+                  if (Model.ViewedUser != null)
+                  {
+                    <div class="col-md-3"> <img id="userpic_on_board_big" src="@Url.Action("GetImage", "Account", new { id1=Model.ViewedUser.UserID, id2=0, id3=0 })"></div>
+                  }
+                  else{
+                    <div class="col-md-3"> <img id="userpic_on_board_big" src="@Url.Action("GetImage", "Account", new { id1=Model.UserID, id2=0, id3=0 })"></div>
+                  }
+              }
+              <div class="col-md-6 col-md-offset-1"> <div class="row"><h2>@Model.UserLogin profile</h2></div> </div>
+               @if (Model.ViewedUser != null)
+               {
+                <div class="row">
+                    @{
+                        if(Model.Following.Contains(Model.ViewedUser)){
+                            <div class="col-md-4 col-md-offset-1"> <a href="#" class = "btn btn-primary"> Unfollow </a> </div>
+                        }
+                        else{
+                            <div class="col-md-4 col-md-offset-1"> <a href="#" class = "btn btn-primary"> Follow </a> </div> 
+                        }
+                    }
+                </div>
+               }
+          </div>
+          <hr>
+           <div class="btn-group btn-group-justified btn-group-lg">
+               @{
+                   if(Model.ViewedUser != null){
+                       @Html.RouteLink("Likes", "ProfilePageLikes", new { userID = Model.UserID, viewedUserID = Model.ViewedUser.ID }, new { @class = "btn btn-default" });
+                       @Html.RouteLink("Sets", "ProfilePageSets", new { userID = Model.UserID, viewedUserID = Model.ViewedUser.ID }, new { @class = "btn btn-default" });
+                   }
+                   else{
+                       @Html.RouteLink("Likes", "ProfilePageLikes", new { userID = Model.UserID }, new { @class = "btn btn-default" });
+                       @Html.RouteLink("Sets", "ProfilePageSets", new { userID = Model.UserID }, new { @class = "btn btn-default" });
+                   }       
+               }
+            <a href="#" class = "btn btn-default", id="active">Options</a> 
+           </div>
+          <br>
+
+
+ <div class="row">
+            <div class="col-md-2"><h4>Name:</h4></div>
+            <div class="col-md-3 "><h4><em>@Model.Name</em></h4></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3"><h4>Personal info:</h4></div>
+            <div class="col-md-3 "><h4><em>@Model.PersonalInfo</em></h4></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><h4>Accounts links:</h4></div>
+            <div class="col-md-3 "><h4><em>@Model.AccountsLinks</em></h4></div>
+          </div>
+          <div class="row">
+                <div class="col-md-12 col-offset-1"><h4>Lives in @Model.Country, speaks @Model.Language.</h4></div>
+          </div>
+          <div class="row">
+              @if(Model.WeeklyNewsletter){
+                <div class="col-md-12 col-offset-1"><h4>Wants to get a weekly newsletter</h4></div>
+              }
+            @if(!(Model.WeeklyNewsletter)){
+              <div class="col-md-12 col-offset-1 "><h4>Doesn't want to get a weekly newsletter</h4></div>
+              }
+          </div>
+          <br/><br/>
+          <div class="row"><div class="col-md-2"></div>
+            <div class="col-md-9"><button class="btn btn-lg btn-default btn-block" type="submit">Edit</button></div>
+</div>
+
+</div>
+
+ <div class="col-md-2" id="board_small">
+
+  @Html.Partial("ProfilePageRP", Model)  
+
+     <ul class="pagination pagination-sm" id ="pages_tags">
+        @Html.ProfilePageLinks(Model.TagsPagingInfo, Model.UserID, Model.SetsPagingInfo.CurrentPage, (a, b, c) => Url.Action("ProfilePage", new { userID = a, tagsPage = c, picsPage = b }))
+    </ul> 
+
+ </div>
+    </div>

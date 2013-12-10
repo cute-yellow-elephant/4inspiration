@@ -1,0 +1,76 @@
+﻿@model MvcApplication.Models.HomeModels.GetPictureDataModel
+@{
+    int pic_number = Model.Pictures.Count();
+}
+
+@if(pic_number > 0)
+{
+    bool flag = true;
+    int pic_counter = 1;
+    while(flag)
+    {
+        <div class="container marketing">
+        <div class="row">
+        @for( ; pic_counter <= pic_number; pic_counter++)
+        {
+            var user = Model.Pictures.ElementAt(pic_counter - 1).PictureSet.Profile.User;
+            <div class="col-md-3">
+                <div class="thumbnail">
+                     <img src="@Url.Action("GetImage", "Account", new { id1 = 0, id2 = 0, id3 = Model.Pictures.ElementAt(pic_counter-1).ID })" />  
+                    <div class="btn-group dropdown" id="profile_pictures">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <strong>@Model.Pictures.ElementAt(pic_counter-1).Name</strong> <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header">@Model.Pictures.ElementAt(pic_counter-1).ShortInfo</li>
+                            <li class="dropdown-header">Was added @Model.Pictures.ElementAt(pic_counter-1).CreationDate </li>
+                            <li><a href="#some_user">By <span class="glyphicon glyphicon-user"></span> <em>@user.Login</em></a></li>
+                            @if((Model.CurrentUser != null)&&(Model.CurrentUser.ID != user.ID)){
+                                bool flag1 = false;
+                                foreach(var u in Model.CurrentUser.Following.ToList())
+                                {
+                                    if(u.ID == user.ID){
+                                        flag1 = true;
+                                        <li><a href="#">Unfollow</a></li>
+                                    }
+                                }
+                                if(!flag1){
+                                   <li><a href="#">Follow</a></li> 
+                                }  
+                                flag1 = false;
+                                foreach(var p in Model.CurrentUser.HeartedPics.ToList())
+                                {
+                                    if (p.ID == Model.Pictures.ElementAt(pic_counter - 1).ID)
+                                    {
+                                        flag1 = true;
+                                        <li>@Html.RouteLink(" Unheart it / Dislike ", "DeleteHeartedPic", new { userID = Model.CurrentUser.ID, page = Model.CurrentPage, pictureID = p.ID})</li>
+                                    }
+                                }
+                                if(!flag1){
+                                   <li>@Html.RouteLink(" Heart it / Like ", "AddHeartedPic", new { userID = Model.CurrentUser.ID, page = Model.CurrentPage, pictureID = Model.Pictures.ElementAt(pic_counter - 1).ID})</li> 
+                                } 
+                            }
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Tags:</li>
+                                
+                                    @foreach (var t in Model.Pictures.ElementAt(pic_counter - 1).Tags)
+                                    {
+                                     <a href="#">@t.Name </a>      
+                                    }
+                                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            if (pic_counter == pic_number) { flag = false; break; } //all foolowing are on screen
+            if (pic_counter%4 == 0)//all 4 are in line
+            {
+                pic_counter++;
+                break; 
+            }
+         }
+        </div>
+       </div><br/>
+    }     
+}
+
